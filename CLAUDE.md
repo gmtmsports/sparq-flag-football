@@ -29,9 +29,9 @@ Used in the feature rows and hero (real screenshots beat mockups):
 - Spare/available: `web-leaderboard.png`, `event-screen.png`, `app-score.png`, `athlete-profile.png`.
 
 ## Deployment
-- Repo: https://github.com/gmtmsports/sparq-usa-football (public, `main`).
-- Vercel project `sparq-usa-football` (scope `joeygrant55s-projects`), connected to the repo → pushes to `main` auto-deploy.
-- Live: https://sparq-usa-football.vercel.app
+- Repo: https://github.com/gmtmsports/sparq-flag-football (public, `main`).
+- Vercel project `sparq-flag-football` (scope `joeygrant55s-projects`), connected to the repo → pushes to `main` auto-deploy.
+- Live: https://sparq-flag-football.vercel.app
 - Manual deploy: `npx vercel --prod --yes --scope joeygrant55s-projects`.
 - Deploy order (per Joey's workflow): commit + push to GitHub first, then Vercel.
 
