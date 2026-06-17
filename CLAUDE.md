@@ -20,7 +20,20 @@ Marketing landing page for **SPARQ** (the athletic-performance testing standard,
 - `public/sparq-wordmark-green.png` — official green wordmark (used in Nav + Footer).
 - `public/sparq-wordmark.svg` — vector wordmark (black paths).
 - `public/sparq-icon-green.png` / `sparq-icon-blurple.png` — the SPARQ triangle "SR" monogram icon (green-on-dark / dark-on-green). Used in hero badge + footer; green version is also `src/app/icon.png` (favicon).
-- `public/leaderboard-event.png` — real photo of a live SPARQ leaderboard at an event (Features row 1), pulled from allsportscombine.com.
+## Real product/photo assets (`public/`)
+Used in the feature rows and hero (real screenshots beat mockups):
+- `tv-leaderboard.png` — live in-venue video leaderboard (Features row 1).
+- `phone-results.png` — SPARQ app score + percentiles on phone/tablet (Features row 2).
+- `geraci-card.png` — Isabella Geraci's official U.S. Women's Flag National Team card (Features row 3 + proof point).
+- `combine-fieldhouse.png` — "All Sports Combine" field-house shot (faint hero backdrop).
+- Spare/available: `web-leaderboard.png`, `event-screen.png`, `app-score.png`, `athlete-profile.png`.
+
+## Deployment
+- Repo: https://github.com/gmtmsports/sparq-usa-football (public, `main`).
+- Vercel project `sparq-usa-football` (scope `joeygrant55s-projects`), connected to the repo → pushes to `main` auto-deploy.
+- Live: https://sparq-usa-football.vercel.app
+- Manual deploy: `npx vercel --prod --yes --scope joeygrant55s-projects`.
+- Deploy order (per Joey's workflow): commit + push to GitHub first, then Vercel.
 
 ## Content source of truth
 Built from `~/Downloads/GMTM_SPARQ Product Deck.pdf`:
@@ -30,6 +43,6 @@ Built from `~/Downloads/GMTM_SPARQ Product Deck.pdf`:
 - Trusted by: Team USA/USOPC, NCAA, NFL, U.S. Air Force, ESPN, USA Football.
 
 ## Known placeholders (swap before launch)
-- **Athletes selected** use initials avatars — add real athlete headshots in `AthletesSelected.tsx`.
+- **Athletes selected** (`AthletesSelected.tsx`) still uses initials avatars — real headshots pending (Geraci's card is already used in Features row 3).
 - **CTA links** point to `https://gmtm.com` — repoint to the real combine-signup / profile flow.
 - Sibling site for more assets/reference: https://allsportscombine.com
