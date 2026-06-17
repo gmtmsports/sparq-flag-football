@@ -1,7 +1,6 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
-import { Container, Reveal, VoltButton } from "./ui";
+import { Container, Reveal } from "./ui";
 
 export default function CTA() {
   return (
@@ -14,28 +13,13 @@ export default function CTA() {
             Benchmark · Develop · Dominate
           </p>
           <h2 className="mx-auto mt-4 max-w-3xl font-display text-4xl font-black uppercase leading-[1.0] tracking-tight sm:text-6xl">
-            Get your verified SPARQ score.
+            This is why today matters.
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-lg font-medium text-black/70">
-            The same standard trusted by Team USA and USA Football is open to your
-            athlete. Find a combine, get tested, and get on the board.
+            One verified score, captured on video, ranked against the nation. It&apos;s
+            the same standard trusted by Team USA and USA Football — and it&apos;s how
+            athletes get discovered. Every rep counts.
           </p>
-          <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
-            <a
-              href="https://gmtm.com"
-              className="group inline-flex items-center justify-center gap-2 skew-tab bg-black px-8 py-4 text-sm font-extrabold uppercase tracking-wide text-volt transition-transform hover:scale-[1.02]"
-            >
-              Find a Combine
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </a>
-            <VoltButton
-              href="https://gmtm.com"
-              variant="outline"
-              className="border-black/30 text-black hover:border-black hover:text-black"
-            >
-              Create Athlete Profile
-            </VoltButton>
-          </div>
         </Reveal>
       </Container>
     </section>

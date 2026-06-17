@@ -1,8 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
-import { Container, VoltButton } from "./ui";
+import { Container } from "./ui";
 import VideoEmbed from "./VideoEmbed";
 
 export default function Hero() {
@@ -31,7 +30,7 @@ export default function Hero() {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/sparq-icon-green.png" alt="" className="h-5 w-5" />
-            SPARQ × USA Football
+            The Standard for Athletic Performance
           </motion.div>
 
           <motion.h1
@@ -53,24 +52,10 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.12 }}
             className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/70"
           >
-            Real-time video scoring at every combine. Your times and clips land on your
-            phone. The best athletes get seen — and selected — by USA Football.
+            Here&apos;s what&apos;s happening today. Every drill is scored on video and
+            ranked in real time. Your times and clips land on your phone — and the best
+            performances get seen by the coaches who matter.
           </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.18 }}
-            className="mt-8 flex flex-wrap items-center justify-center gap-4"
-          >
-            <VoltButton href="#cta">
-              Find a Combine{" "}
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </VoltButton>
-            <VoltButton href="#video" variant="outline">
-              Watch the Highlights
-            </VoltButton>
-          </motion.div>
         </div>
 
         <motion.div

@@ -36,9 +36,6 @@ export default function Nav() {
             alt="SPARQ"
             className="h-5 w-auto sm:h-6"
           />
-          <span className="hidden text-[11px] font-semibold uppercase tracking-[0.18em] text-white/45 sm:inline">
-            / USA Football
-          </span>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -52,13 +49,6 @@ export default function Nav() {
             </a>
           ))}
         </nav>
-
-        <a
-          href="#cta"
-          className="skew-tab bg-volt px-5 py-2.5 text-xs font-extrabold uppercase tracking-wide text-black transition-colors hover:bg-volt-bright"
-        >
-          Get Tested
-        </a>
       </Container>
     </header>
   );

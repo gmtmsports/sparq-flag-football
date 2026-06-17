@@ -15,15 +15,34 @@ const archivo = Archivo({
   display: "swap",
 });
 
+const SITE_URL = "https://sparq-flag-football.vercel.app";
+const OG_DESCRIPTION =
+  "Get scored, get seen, get selected. Every drill is scored on video and ranked in real time — the verified athletic-performance standard trusted by Team USA, the NFL, and the NCAA.";
+
 export const metadata: Metadata = {
-  title: "SPARQ — The Standard for Athletic Performance | USA Football",
-  description:
-    "SPARQ is the verified athletic-performance score trusted by Team USA, the NFL, and the NCAA. See how USA Football uses SPARQ combines to discover the next generation of athletes — and how your athlete gets tested, ranked, and recruited.",
+  metadataBase: new URL(SITE_URL),
+  title: "SPARQ — The Standard for Athletic Performance",
+  description: OG_DESCRIPTION,
   openGraph: {
-    title: "SPARQ — The Standard for Athletic Performance",
-    description:
-      "The verified testing trusted at the highest levels of sport, now open to every athlete. Get tested. Get ranked. Get discovered.",
+    title: "SPARQ — Get Scored. Get Seen. Get Selected.",
+    description: OG_DESCRIPTION,
+    url: SITE_URL,
+    siteName: "SPARQ",
     type: "website",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "SPARQ — The Standard for Athletic Performance",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SPARQ — Get Scored. Get Seen. Get Selected.",
+    description: OG_DESCRIPTION,
+    images: ["/og.png"],
   },
 };
 
