@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand: deep "blurple" navy-purple + volt green (sampled from official SPARQ marks) */
+  --color-ink: #0a0617;
+  --color-ink-soft: #120a26;
+  --color-panel: #1b1133;
+  --color-blurple: #1b0f29;
+  --color-volt: #d5f23d;
+  --color-volt-bright: #e4ff5c;
+  --color-volt-dim: #b6d42f;
+
+  --font-display: var(--font-archivo), "Arial Narrow", system-ui, sans-serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+}
+
+:root {
+  --shadow-volt: 0 0 0 1px rgba(213, 242, 61, 0.4), 0 12px 40px -12px rgba(213, 242, 61, 0.45);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: var(--color-ink);
+  color: #ededf2;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Angular "SPARQ" skew motif used across cards/badges */
+.skew-tab {
+  clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%);
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.18);
+  color: transparent;
+}
+
+.grain {
+  background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.06) 1px, transparent 0);
+  background-size: 28px 28px;
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-ticker {
+  animation: ticker 28s linear infinite;
+}
+
+::selection {
+  background: var(--color-volt);
+  color: #000;
+}
