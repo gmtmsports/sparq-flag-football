@@ -6,7 +6,8 @@ import { Container, cn } from "./ui";
 const links = [
   { label: "Watch", href: "#video" },
   { label: "How It Works", href: "#how" },
-  { label: "Athletes Selected", href: "#selected" },
+  { label: "Athletes", href: "#selected" },
+  { label: "UAB Combine", href: "#uab" },
 ];
 
 export default function Nav() {

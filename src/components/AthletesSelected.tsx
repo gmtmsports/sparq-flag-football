@@ -14,7 +14,6 @@ type Athlete = {
 
 const athletes: Athlete[] = [
   { name: "London Jenkins", team: "U.S. Women's Flag National Team", img: "/athlete-london.png", objectPosition: "object-top" },
-  { name: "Isabella Geraci", team: "U.S. Women's Flag National Team", img: "/geraci-card.png", polished: true },
   { name: "Tyler Davis", team: "USA Football National Team", img: "/athlete-tyler.png", objectPosition: "object-top" },
   { name: "Anderson Lee", team: "U.S. Boys' Flag National Team", img: "/athlete-anderson.png", objectPosition: "object-top" },
 ];
@@ -34,7 +33,7 @@ export default function AthletesSelected() {
           </h2>
         </Reveal>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto mt-12 grid max-w-4xl grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-5">
           {athletes.map((a, i) => (
             <Reveal key={a.name} delay={i * 0.07}>
               <div className="group relative aspect-[4/5] h-full overflow-hidden rounded-xl border border-white/10 transition-all hover:-translate-y-1 hover:border-volt/50">
